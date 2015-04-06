@@ -13,9 +13,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 </head>
 <body>
-  <% flash.each do |name, msg| -%>
-    <%= content_tag :div, msg, class: name %>
-  <% end -%>
   <div class="wrapper">
     <div class="nav-icon"><i></i></div>
     <nav class="main-nav">
@@ -36,6 +33,9 @@
       </div>
     </nav>
     <main class="main">
+      <% flash.each do |name, msg| -%>
+        <%= content_tag :div, msg, class: name %>
+      <% end -%>
       <%= yield %>
     <main>
   </div>

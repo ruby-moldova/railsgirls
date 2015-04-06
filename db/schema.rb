@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150404163100) do
+ActiveRecord::Schema.define(version: 20150406180356) do
 
   create_table "candidate_profiles", force: :cascade do |t|
     t.string "name"
@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 20150404163100) do
     t.text   "teamwork"
     t.text   "last_skill"
     t.text   "agreement"
+    t.string "disagreement_comment"
   end
 
   create_table "users", force: :cascade do |t|
