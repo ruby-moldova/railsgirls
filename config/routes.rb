@@ -5,5 +5,5 @@ Rails.application.routes.draw do
     :sessions => "user/sessions"
   }
 
-  root 'application#hello'
+  root 'home#index'
 end

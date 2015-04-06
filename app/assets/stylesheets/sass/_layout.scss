@@ -1,0 +1,500 @@
+html {
+  font-size: 16px;
+}
+
+html, body {
+  background: $color-brown;
+  font-family: 'Raleway';
+  height: 100%;
+  min-height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: rgba($color-black, .75);
+}
+
+.wrapper {
+  overflow-x: hidden;
+}
+
+.main {
+  @include transition(all 0.3s ease-out);
+  @include scale(padding, 0 20px);
+  background: $color-brown;
+  position: relative;
+  z-index: 101;
+
+  .open-nav & {
+    @include transform(translate3d(200px, 0, 0));
+  }
+}
+
+// Section Header
+.sec-header {
+  @include scale(padding, 75px 0);
+}
+
+.sec-header-logo {
+  @include box-shadow(0 0px 10px -4px $color-red);
+  @include border-radius(50%);
+  @include scale(height, 320px);
+  @include scale(line-height, 320px);
+  margin: 0 auto;
+  @include scale(margin-bottom, 40px);
+  @include scale(width, 320px);
+  background: $color-white;
+  text-align: center;
+  vertical-align: middle;
+
+  img {
+    vertical-align: middle;
+  }
+}
+
+.sec-header-period {
+  text-align: center;
+
+  p {
+    @include light;
+    @include scale(font-size, 21px);
+    @include scale(padding, 0 0 18px);
+    color: $color-grey;
+    font-family: 'Titillium Web';
+    text-transform: uppercase;
+  }
+}
+
+// Section About
+.sec-about {
+  @include scale(padding, 85px 0);
+
+  > ul {
+    @include scale(margin, 0 0 42px);
+    display: none;
+    font-size: 0;
+  }
+
+  > select {
+    @include scale(padding, 8px);
+    @include scale(margin-bottom, 20px);
+    color: $color-red;
+    width: 100%;
+
+  }
+
+  li {
+    @include scale(font-size, 15px);
+    @include scale(padding, 0 20px);
+    color: $color-black;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Titillium Web';
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    width: percentage(1/6);
+
+    a {
+      color: $color-black;
+    }
+
+
+    &:before {
+      content: '';
+      margin: 0 auto 15px;
+    }
+
+    &.calendar:before {
+      @include scale(padding-bottom, 2px);
+      @include sprite-background(calendar);
+    }
+
+    &.reason:before {
+      @include sprite-background(reason);
+    }
+
+    &.why:before {
+      @include sprite-background(why);
+    }
+
+    &.money:before {
+      @include scale(padding-bottom, 8px);
+      @include sprite-background(money);
+    }
+
+    &.mentors:before {
+      @include scale(padding-bottom, 4px);
+      @include sprite-background(mentors);
+    }
+
+    &.who:before {
+      @include scale(padding-bottom, 14px);
+      @include sprite-background(who);
+    }
+
+    &.active {
+      font-weight: bold;
+    }
+  }
+
+  .sec-about-text {
+    @include scale(font-size, 15px);
+    @include scale(line-height, 23px);
+    color: $color-black;
+  }
+}
+
+// Section Apply
+.sec-apply {
+
+}
+
+.sec-apply-list {
+  @include scale(padding, 65px 0);
+
+  li {
+    @include scale(font-size, 21px);
+    @include scale(padding, 20px 0);
+    color: $color-black;
+    text-transform: uppercase;
+    vertical-align: middle;
+
+    span {
+      @include scale(font-size, 27px);
+    }
+
+    i {
+      @include scale(width, 170px);
+      display: none;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    i:before {
+      content: '';
+    }
+
+    &.form i:before {
+      @include sprite-background(form);
+      display: inline-block;
+    }
+
+    &.interview i:before {
+      @include sprite-background(interview);
+      display: inline-block;
+    }
+
+    &.acceptance i:before {
+      @include sprite-background(acceptance);
+      display: inline-block;
+    }
+  }
+}
+
+.sec-apply-btn {
+  text-align: center;
+}
+
+// Section Contact
+.sec-contact {
+  @include scale(padding, 60px 0);
+
+  h3 {
+    @include light;
+    @include scale(padding, 0 0 60px);
+    @include scale(font-size, 15px);
+    font-family: 'Titillium Web';
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.sec-contact-info {
+  @include light;
+  font-family: 'Titillium Web';
+
+  p {
+    @include scale(font-size, 21px);
+    @include scale(padding, 10px 0);
+    color: $color-black;
+    display: inline-block;
+    vertical-align: middle;
+
+    i {
+      @include scale(padding, 0 10px);
+      display: inline-block;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    i:before {
+      content: '';
+    }
+
+    &.mail i:before {
+      @include sprite-background(mail);
+      display: inline-block;
+    }
+
+    &.phone i:before {
+      @include sprite-background(phone);
+      display: inline-block;
+    }
+  }
+}
+
+// Section Form
+.sec-form {
+  @include scale(padding, 80px 0);
+
+  h2 {
+    @include scale(padding, 0 0 30px);
+    @include scale(font-size, 16px);
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+
+  }
+}
+
+.sec-form-input {
+  @include light;
+  @include scale(font-size, 14px);
+  @include scale(margin, 0 0 15px);
+  @include scale(padding, 5px 20px);
+  background: $color-white;
+  border: 0;
+  color: $color-black;
+  display: block;
+  font-family: 'Titillium Web';
+  width: 100%;
+
+  @include input-placeholder {
+    color: $color-black;
+  }
+}
+
+.sec-form-textarea {
+  @include light;
+  @include scale(font-size, 14px);
+  @include scale(margin, 0 0 15px);
+  @include scale(padding, 5px 20px);
+  background: $color-white;
+  font-family: 'Titillium Web';
+
+  p {
+    @include scale(padding-bottom, 4px);
+    border-bottom: 1px dotted $color-brown;
+  }
+
+  textarea {
+    @include light;
+    @include scale(font-size, 14px);
+    @include scale(min-height, 120px);
+    background: $color-white;
+    border: 0;
+    font-family: 'Titillium Web';
+    width: 100%;
+  }
+}
+
+.sec-form-radio {
+  @include light;
+  @include scale(font-size, 14px);
+  @include scale(padding-top, 10px);
+  font-family: 'Titillium Web';
+
+  label {
+    @include scale(margin-bootm, 10px);
+    cursor: pointer;
+    display: block;
+  }
+
+  input {
+    @include scale(top, 1px);
+    color: $color-red;
+    position: relative;
+  }
+}
+
+.sec-form-submit {
+  @include scale(padding-top, 30px);
+  text-align: center;
+}
+
+// Button
+.btn {
+  @include border-radius(45px);
+  @include box-shadow(0 0px 10px -1px $color-grey);
+  @include light;
+  @include scale(font-size, 17px);
+  @include scale(min-width, 248px);
+  @include scale(padding, 12px 12px);
+  background-color: $color-red;
+  color: $color-white;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.btn-apply {
+  background-color: $color-red;
+  color: $color-white;
+}
+
+.btn-submit {
+  background-color: $color-red;
+  color: $color-white;
+  border: 0;
+}
+
+// TABLET
+@include at-breakpoint($tablet) {
+  .main {
+    @include scale(margin-left, 200px);
+    @include scale(padding, 0 35px);
+
+    .open-nav & {
+      @include transform(translate3d(0, 0, 0));
+    }
+  }
+
+  .sec-header-logo {
+    @include scale(height, 350px);
+    @include scale(line-height, 350px);
+    @include scale(margin-bottom, 40px);
+    @include scale(width, 350px);
+  }
+
+  // Section About
+  .sec-about {
+    @include scale(padding, 60px 0);
+
+    > ul {
+      @include scale(margin, 0 0 32px);
+      display: block;
+    }
+
+    > select {
+      display: none;
+    }
+  }
+
+  .sec-apply-list {
+    @include scale(padding, 40px 0);
+
+    li {
+      @include scale(font-size, 21px);
+      @include scale(padding, 20px 0);
+
+      span {
+        @include scale(font-size, 32px);
+      }
+
+      i {
+        display: none;
+      }
+    }
+  }
+
+  // Section Contact
+  .sec-contact {
+    @include scale(padding, 100px 0);
+
+    h3 {
+      @include scale(padding, 0 0 40px);
+    }
+  }
+
+  .sec-contact-info {
+    p {
+      @include scale(font-size, 21px);
+      @include scale(padding, 20px 0);
+
+      &.mail {
+        @include scale(padding-right, 30px);
+      }
+    }
+  }
+
+  .sec-form {
+    @include scale(padding, 120px 0);
+
+    h2 {
+      @include scale(padding, 0 0 60px);
+      @include scale(font-size, 24px);
+
+      &:before,
+      &:after {
+        @include sprite-background(ruby);
+        @include scale(margin, 0 20px);
+        content: '';
+        display: inline-block;
+      }
+    }
+  }
+
+}
+
+// DESKTOP
+@include at-breakpoint($small-desktop) {
+  .main {
+    @include scale(padding, 0 145px);
+  }
+
+  .sec-header-logo {
+    @include scale(height, 410px);
+    @include scale(line-height, 410px);
+    @include scale(margin-bottom, 60px);
+    @include scale(width, 410px);
+  }
+
+  // Section About
+  .sec-about {
+    @include scale(padding, 85px 0);
+
+    > ul {
+      @include scale(margin, 0 0 42px);
+    }
+  }
+
+  .sec-apply-list {
+    @include scale(padding, 65px 0);
+
+    li {
+      @include scale(font-size, 23px);
+      @include scale(padding, 20px 0);
+
+      span {
+        @include scale(font-size, 42px);
+      }
+
+      i {
+        @include scale(width, 170px);
+        display: inline-block;
+      }
+    }
+  }
+
+  // Section Contact
+  .sec-contact {
+    @include scale(padding, 160px 0);
+
+    h3 {
+      @include scale(padding, 0 0 60px);
+    }
+  }
+
+  .sec-contact-info {
+    p {
+      @include scale(font-size, 23px);
+      @include scale(padding, 20px 0);
+
+      &.mail {
+        @include scale(padding-right, 50px);
+      }
+    }
+  }
+}

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Rails Girls</title>
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Titillium+Web:300,600,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
+  <script src="js/script.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="nav-icon"><i></i></div>
+    <nav class="main-nav">
+      <div class="nav-content">
+        <div class="nav-logo">
+          <a href="#RailsGirls"><img src="images/logo_white.png" alt="RailGirls Chisinau"/></a>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#Despre">Despre</a></li>
+          <li><a href="#Aplica">Aplică</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+        <div class="nav-bottom">
+          <a href="#" class="nav-fb">pagină eveniment</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="main">
+      <section class="sec-form">
+        <h2>Formular de aplicare</h2>
+        <form>
+          <input class="sec-form-input" type="text" placeholder="Nume Prenume"/>
+          <input class="sec-form-input" type="text" placeholder="E-mail"/>
+          <input class="sec-form-input" type="text" placeholder="Telefon"/>
+          <div class="sec-form-textarea">
+            <p><label for="question1">
+              Întrebare 1 și spațiu pentru răspuns
+            </label></p>
+            <textarea id="question1"></textarea>
+          </div>
+          <div class="sec-form-textarea">
+            <p><label for="question2">
+              Întrebare 2 și spațiu pentru răspuns
+            </label></p>
+            <textarea id="question2"></textarea>
+          </div>
+          <div class="sec-form-textarea">
+            <p><label for="question3">
+              Întrebare 3 și spațiu pentru răspuns
+            </label></p>
+            <textarea id="question3"></textarea>
+          </div>
+
+          <div class="sec-form-radio">
+            <label>
+              <input type="radio" name="laptop"/> Vin cu laptop personal
+            </label>
+            <label>
+              <input type="radio" name="laptop"/> Voi lucra la calculatorul de masă oferit în sala de curs
+            </label>
+          </div>
+
+          <div class="sec-form-submit">
+            <input type="submit" class="btn btn-submit" value="Trimite"/>
+          </div>
+        </form>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
