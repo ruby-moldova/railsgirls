@@ -1,0 +1,37 @@
+<%= form_for @candidate, url: {action: "create"} do |f| %>
+  <%= f.text_field(:name, placeholder: "Nume") %>
+  <br />
+  <%= f.text_field(:email, placeholder: "E-mail") %>
+  <br />
+  <%= f.text_field(:phone, placeholder: "Telefon") %>
+  <br />
+  <%= f.text_field(:city, placeholder: "Localitate") %>
+  <br />
+  <%= f.label(:birthday, "Your birthday ") %>
+  <%= f.date_field(:birthday, placeholder: "Ziua de nastere") %>
+  <br />
+  <%= f.text_field(:activity, placeholder: "Unde activitati/studiati?") %>
+  <br />
+  <%= f.text_field(:studies, placeholder: "Ce studii aveti?") %>
+  <br />
+  <%= f.text_area(:motivation, placeholder: "Ce va motiveaza sa veniti la acest curs?") %>
+  <br />
+  <%= f.text_area(:voluntariat, placeholder: "Ati participat la activitati de voluntariat?") %>
+  <br />
+  <%= f.text_area(:project_idea, placeholder: "Aveti o idee de proiect? Daca da, descrieti mai jos") %>
+  <br />
+  <%= f.text_area(:teamwork, placeholder: "Aveti experienta de lucru in echipa?") %>
+  <br />
+  <%= f.text_area(:last_skill, placeholder: "Care este ultimul lucru pe care l-ati invatat?") %>
+  <br />
+  <%= f.radio_button(:agreement, "DA") %>
+  <%= f.label(:agreement, "Sunt de acord sa frecventez toate trei lectii ") %>
+  <br />
+  <%= f.radio_button(:agreement, "NU") %>
+  <%= f.label(:agreement, "Nu pot la toate :(") %>
+  <br />
+  <%= f.text_area(:agreement, placeholder: "De ce?") %>
+    <br />
+  <%= f.submit("Aplica") %>
+<% end %>
+
