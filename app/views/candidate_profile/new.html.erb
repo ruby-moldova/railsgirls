@@ -1,37 +1,47 @@
-<%= form_for @candidate, url: {action: "create"} do |f| %>
-  <%= f.text_field(:name, placeholder: "Nume") %>
-  <br />
-  <%= f.text_field(:email, placeholder: "E-mail") %>
-  <br />
-  <%= f.text_field(:phone, placeholder: "Telefon") %>
-  <br />
-  <%= f.text_field(:city, placeholder: "Localitate") %>
-  <br />
-  <%= f.label(:birthday, "Your birthday ") %>
-  <%= f.date_field(:birthday, placeholder: "Ziua de nastere") %>
-  <br />
-  <%= f.text_field(:activity, placeholder: "Unde activitati/studiati?") %>
-  <br />
-  <%= f.text_field(:studies, placeholder: "Ce studii aveti?") %>
-  <br />
-  <%= f.text_area(:motivation, placeholder: "Ce va motiveaza sa veniti la acest curs?") %>
-  <br />
-  <%= f.text_area(:voluntariat, placeholder: "Ati participat la activitati de voluntariat?") %>
-  <br />
-  <%= f.text_area(:project_idea, placeholder: "Aveti o idee de proiect? Daca da, descrieti mai jos") %>
-  <br />
-  <%= f.text_area(:teamwork, placeholder: "Aveti experienta de lucru in echipa?") %>
-  <br />
-  <%= f.text_area(:last_skill, placeholder: "Care este ultimul lucru pe care l-ati invatat?") %>
-  <br />
-  <%= f.radio_button(:agreement, "DA") %>
-  <%= f.label(:agreement, "Sunt de acord sa frecventez toate trei lectii ") %>
-  <br />
-  <%= f.radio_button(:agreement, "NU") %>
-  <%= f.label(:agreement, "Nu pot la toate :(") %>
-  <br />
-  <%= f.text_area(:agreement, placeholder: "De ce?") %>
-    <br />
-  <%= f.submit("Aplica") %>
-<% end %>
+<section class="sec-form">
+  <h2>Formular de aplicare</h2>
+  <%= form_for @candidate, url: {action: "create"} do |f| %>
+    <%= f.text_field :name, class: "sec-form-input", placeholder: "Nume Prenume"%>
+    <%= f.text_field :email, class: "sec-form-input", placeholder: "E-mail" %>
+    <%= f.text_field :phone, class: "sec-form-input", placeholder: "Telefon" %>
+    <%= f.text_field :city, class: "sec-form-input", placeholder: "Localitate" %>
+    <p><%= f.label :birthday, "Data nașterii" %><p>
+    <%= f.date_field :birthday, class: "sec-form-input" %>
+    <%= f.text_field :activity, class: "sec-form-input", placeholder: "Unde activezi/studiezi?" %>
+
+    <div class="sec-form-textarea">
+      <p><%= f.label :motivation, "Ce te motivează să aplici la acest curs?" %></p>
+      <%= f.text_area :motivation %>
+    </div>
+    <div class="sec-form-textarea">
+      <p><%= f.label :voluntariat, "Ai participat la activitate de voluntariat?" %></p>
+      <%= f.text_area :voluntariat %>
+    </div>
+    <div class="sec-form-textarea">
+      <p><%= f.label :project_idea, "Ce idei de proiect ai?" %></p>
+      <%= f.text_area :project_idea %>
+    </div>
+    <div class="sec-form-textarea">
+      <p><%= f.label :teamwork, "Ce experiență ai de lucru în echipă?" %></p>
+      <%= f.text_area :teamwork %>
+    </div>
+    <div class="sec-form-textarea">
+      <p><%= f.label :last_skill, "Care este ultimul lucru pe care l-ai învățat?" %></p>
+      <%= f.text_area :last_skill %>
+    </div>
+
+    <div class="sec-form-radio">
+      <label>
+        <%= f.radio_button :agreement, "Da" %> Sunt de acord să frecventez toate trei lecții
+      </label>
+      <label>
+        <%= f.radio_button :agreement, "Nu" %> Nu pot frecventa toate trei lecții
+      </label>
+      <%= f.text_field :agreement, class: "sec-form-input", placeholder: "De ce?" %>
+    </div>
+    <div class="sec-form-submit">
+      <%= f.submit "Trimite", class: "btn btn-submit" %>
+    </div>
+  <% end %>
+</section>
 
