@@ -18,14 +18,14 @@
     <nav class="main-nav">
       <div class="nav-content">
         <div class="nav-logo">
-          <a href="#RailsGirls">
+          <%= link_to "/" do %>
             <%= image_tag "logo_white.png", alt: "RailGirls Chisinau" %>
-          </a>
+          <% end %>
         </div>
         <ul class="nav-menu">
-          <li><a href="#Despre">Despre</a></li>
-          <li><a href="#Aplica">Aplică</a></li>
-          <li><a href="#Contact">Contact</a></li>
+          <li><%= link_to "Despre", "/#Despre" %></li>
+          <li><%= link_to "Aplică", "/#Aplica" %></li>
+          <li><%= link_to "Contact", "/#Contact" %></li>
         </ul>
         <div class="nav-bottom">
           <a href="#" class="nav-fb">pagină eveniment</a>
