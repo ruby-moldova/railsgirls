@@ -1,17 +1,43 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <title>Railsgirls</title>
+  <meta charset="utf-8">
+  <title>Rails Girls</title>
+  <link href='http://fonts.googleapis.com/css?family=Titillium+Web:300,600,400,700' rel='stylesheet' type='text/css'>
+  <%= stylesheet_link_tag    'http://fonts.googleapis.com/css?family=Raleway:400,300', media: 'all', type: 'text/css' %>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js' %>
+  <%= javascript_include_tag 'script' %>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 </head>
 <body>
-
-<% flash.each do |name, msg| -%>
-<%= content_tag :div, msg, class: name %>
-<% end -%>
-<%= yield %>
-
+  <div class="wrapper">
+    <div class="nav-icon"><i></i></div>
+    <nav class="main-nav">
+      <div class="nav-content">
+        <div class="nav-logo">
+          <%= link_to "/" do %>
+            <%= image_tag "logo_white.png", alt: "RailGirls Chisinau" %>
+          <% end %>
+        </div>
+        <ul class="nav-menu">
+          <li><%= link_to "Despre", "/#Despre" %></li>
+          <li><%= link_to "Aplică", "/#Aplica" %></li>
+          <li><%= link_to "Contact", "/#Contact" %></li>
+        </ul>
+        <div class="nav-bottom">
+          <a href="#" class="nav-fb">pagină eveniment</a>
+        </div>
+      </div>
+    </nav>
+    <main class="main">
+      <% flash.each do |name, msg| -%>
+        <%= content_tag :div, msg, class: name %>
+      <% end -%>
+      <%= yield %>
+    <main>
+  </div>
 </body>
 </html>

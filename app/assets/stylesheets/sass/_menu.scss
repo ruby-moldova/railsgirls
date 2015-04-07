@@ -1,0 +1,103 @@
+.main-nav {
+  @include box-shadow(5px 0px 10px 0px $color-grey);
+  @include scale(padding, 0 20px);
+  @include scale(width, 200px);
+  @include transition(all 0.2s linear);
+  background: $color-red;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+
+.nav-content {
+  height: 100%;
+  position: relative;
+
+  .nav-logo {
+    @include scale(padding, 50px 0 60px);
+    text-align: center;
+  }
+
+  .nav-menu {
+    text-align: center;
+
+    li {
+      @include scale(font-size, 16px);
+      @include scale(padding, 20px 0);
+      text-transform: uppercase;
+    }
+
+    a {
+      color: $color-white;
+    }
+  }
+
+  .nav-bottom {
+    @include scale(padding, 22px 0 32px);
+    bottom: 0;
+    border-top: 1px dotted $color-white;
+    position: absolute;
+    width: 100%;
+
+    .nav-fb {
+      color: $color-white;
+      display: block;
+      text-align: center;
+
+      &:before {
+        @extend %icon-fb;
+        @include font-icons;
+        @include scale(font-size, 32px);
+        @include scale(padding, 0 0 12px);
+        display: block;
+        text-align: center;
+
+      }
+    }
+  }
+}
+
+// Mobile
+.nav-icon {
+  @include scale(padding-left, 20px);
+  @include transition(all 0.3s ease-out);
+  background: $color-red;
+  position: fixed;
+  width: 100%;
+  z-index: 201;
+
+  i {
+    color: $color-white;
+    cursor: pointer;
+    display: block;
+
+    &:before {
+      @extend %icon-menu;
+      @include font-icons;
+      @include scale(font-size, 32px);
+      @include scale(padding, 0 0 12px);
+    }
+  }
+
+  .open-nav & {
+    @include transform(translate3d(200px, 0, 0));
+  }
+}
+
+@include at-breakpoint($tablet) {
+  .nav-icon {
+    display: none;
+
+    .open-nav & {
+      @include transform(translate3d(0, 0, 0));
+    }
+  }
+}
+
+
+@include at-breakpoint($small-desktop) {
+
+}
