@@ -1,6 +1,6 @@
 class CandidateProfile < ActiveRecord::Base
-	validates :name, presence: true
-	validates :email, presence: true
+  validates :name, presence: true
+  validates :email, presence: true
   validates :phone, presence: true
   validates :city, presence: true
   validates :birthday, presence: true
