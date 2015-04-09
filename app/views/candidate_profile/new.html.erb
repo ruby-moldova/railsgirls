@@ -49,11 +49,10 @@
 </section>
 <script>
 $("#candidate_profile_agreement_nu").click(function() {
-  $("#agreement_comment").removeAttr("style");
+  $("#agreement_comment").show();
 });
 $("#candidate_profile_agreement_da").click(function() {
-  $("#agreement_comment").attr("style", "display: none;");
-  $("#candidate_profile_disagreement_comment").val("");
+  $("#agreement_comment").hide();
 })
 </script>
 
