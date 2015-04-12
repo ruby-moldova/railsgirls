@@ -12,6 +12,11 @@
 // FONTS icons
 @include font-face("icons", font-files("icons.woff", "woff", "icons.ttf", "truetype", "icons.svg#icons", "svg"), "icons.eot", normal, normal);
 
+@font-face {
+  font-family: "Raleway";
+  src: font-url("Raleway-Regular.ttf");
+}
+
 @import 'extends';
 @import 'variables';
 
