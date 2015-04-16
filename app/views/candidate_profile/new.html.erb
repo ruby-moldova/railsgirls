@@ -65,19 +65,19 @@
       <% end %>
       <div class="sec-form-radio">
         <label>
-          <%= f.radio_button :agreement, "Da" %>Voi participa la toate activitățile cursului
+          <%= f.radio_button :agreement, "Da", class: "radio-input" %>Voi participa la toate activitățile cursului
         </label>
         <label>
-          <%= f.radio_button :agreement, "Nu" %>Nu pot frecventa toate activitățile
+          <%= f.radio_button :agreement, "Nu", class: "radio-input" %>Nu pot frecventa toate activitățile
         </label>
       </div>
       <div id="agreement_comment" style="display: none;">
-          <%= f.text_field :disagreement_comment, class: "sec-form-input why-input", placeholder: "De ce?" %>
+          <%= f.text_field :disagreement_comment, class: "sec-form-input why-input ", placeholder: "De ce?" %>
       </div>
     </div>
 
     <div class="sec-form-submit">
-      <%= f.submit "Trimite", class: "btn btn-submit" %>
+      <%= f.submit "Trimite", class: "btn btn-submit super-btn-apply" %>
     </div>
   <% end %>
 </section>
@@ -91,19 +91,25 @@ $("#candidate_profile_agreement_da").click(function() {
 </script>
 <style>
 .label-tag-with-info {
+  font-family: "Titillium Web";
   border: 0 !important;
   padding-top: 4px !important;
   font-size: 16px !important;
 }
 .label-tag {
+  font-family: "Titillium Web";
   font-size: 16px !important;
 }
 .info-label-tag {
+  font-family: "Titillium Web";
   color: #A5A5A5 !important;
   font-size: 14px !important;
 }
 .why-input {
   margin-top: 6px;
+}
+.radio-input {
+  margin-right: 10px;
 }
 </style>
 
