@@ -9,10 +9,7 @@
 
     <%= f.text_field :city, class: "sec-form-input label-tag", placeholder: "Localitatea în care te afli în prezent" %>
 
-    <div class="sec-form-textarea">
-      <p><%= f.label :birthday, "Data nașterii" %><p>
-      <%= f.date_field :birthday, class: "sec-form-input label-tag" %>
-    </div>
+    <%= f.number_field :age, class: "sec-form-input label-tag", placeholder: "Ce vârstă ai?"%>
 
     <div class="sec-form-textarea">
       <%= f.label :activity do %>
@@ -75,7 +72,7 @@
         </label>
       </div>
       <div id="agreement_comment" style="display: none;">
-          <%= f.text_field :disagreement_comment, class: "sec-form-input", placeholder: "De ce?" %>
+          <%= f.text_field :disagreement_comment, class: "sec-form-input why-input", placeholder: "De ce?" %>
       </div>
     </div>
 
@@ -104,6 +101,9 @@ $("#candidate_profile_agreement_da").click(function() {
 .info-label-tag {
   color: #A5A5A5 !important;
   font-size: 14px !important;
+}
+.why-input {
+  margin-top: 6px;
 }
 </style>
 
