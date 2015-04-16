@@ -1,66 +1,70 @@
-<section class="sec-form">
+<section class="sec-form" style="padding-top: 60px;">
   <h2>Formular de aplicare</h2>
   <%= form_for @candidate, url: {action: "create"} do |f| %>
-    <%= f.text_field :name, class: "sec-form-input", placeholder: "Numele și Prenumele"%>
+    <%= f.text_field :name, class: "sec-form-input label-tag", placeholder: "Numele și Prenumele"%>
 
-    <%= f.text_field :email, class: "sec-form-input", placeholder: "E-mail" %>
+    <%= f.text_field :email, class: "sec-form-input label-tag", placeholder: "E-mail" %>
 
-    <%= f.text_field :phone, class: "sec-form-input", placeholder: "Numărul de telefon" %>
+    <%= f.text_field :phone, class: "sec-form-input label-tag", placeholder: "Numărul de telefon" %>
 
-    <%= f.text_field :city, class: "sec-form-input", placeholder: "Localitatea în care te afli în prezent" %>
+    <%= f.text_field :city, class: "sec-form-input label-tag", placeholder: "Localitatea în care te afli în prezent" %>
 
-    <p><%= f.label :birthday, "Data nașterii" %><p>
-    <%= f.date_field :birthday, class: "sec-form-input" %>
+    <div class="sec-form-textarea">
+      <p><%= f.label :birthday, "Data nașterii" %><p>
+      <%= f.date_field :birthday, class: "sec-form-input label-tag" %>
+    </div>
 
-    <%= f.label :activity do %>
-      <p>Activitatea principală</p>
-      <p>Ești elevă, studentă, deja angajată sau... spirit liber?</p>
-    <% end %>
-    <%= f.text_field :activity, class: "sec-form-input" %>
+    <div class="sec-form-textarea">
+      <%= f.label :activity do %>
+        <p class="label-tag-with-info">Activitatea principală</p>
+        <p class="info-label-tag">Ești elevă, studentă, deja angajată sau... spirit liber?</p>
+      <% end %>
+      <%= f.text_field :activity, class: "sec-form-input" %>
+    </div>
 
-    <%= f.text_field :studies, class: "sec-form-input", placeholder: "Domeniul în care activezi sau în care îți faci studiile" %>
+    <%= f.text_field :studies, class: "sec-form-input label-tag", placeholder: "Domeniul în care activezi sau în care îți faci studiile" %>
 
     <div class="sec-form-textarea">
       <%= f.label :motivation do %>
-        <p>Ce te motivează să aplici la acest curs?</p>
-        <p>Descrie în ce mod cunoștințele obținute vor fi relevante pentru activitatea ta ulterioară.</p>
+        <p class="label-tag-with-info">Ce te motivează să aplici la acest curs?</p>
+        <p class="info-label-tag">Descrie în ce mod cunoștințele obținute vor fi relevante pentru activitatea ta ulterioară.</p>
       <% end %>
       <%= f.text_area :motivation %>
     </div>
 
     <div class="sec-form-textarea">
       <%= f.label :voluntariat do %>
-        <p>Ai activități de voluntariat?</p>
-        <p>Unul din obiectivele cursului e de a te ajuta să dezvolți competențe tehnice care îți vor permite să dezvolți soluții pentru probleme sociale din domeniul tău de activitate sau voluntariat.</p>
+        <p class="label-tag-with-info">Ai activități de voluntariat?</p>
+        <p class="info-label-tag">Unul din obiectivele cursului e de a te ajuta să dezvolți competențe tehnice care îți vor permite să dezvolți soluții pentru probleme sociale din domeniul tău de activitate sau voluntariat.</p>
       <% end %>
       <%= f.text_area :voluntariat %>
     </div>
 
     <div class="sec-form-textarea">
       <%= f.label :project_idea do %>
-        <p>Ai o idee clară de proiect, care se încadrează în descrierea pe care am dat-o noi și pe care o vei implementa în timpul cursului?</p>
-        <p>Te rugăm să descrii cu maximum de detalii ce anume îți propui să realizezi.</p>
+        <p class="label-tag-with-info">Ai o idee clară de proiect, care se încadrează în descrierea pe care am dat-o noi și pe care o vei implementa în timpul cursului?</p>
+        <p class="info-label-tag">Te rugăm să descrii cu maximum de detalii ce anume îți propui să realizezi.</p>
       <% end %>
       <%= f.text_area :project_idea %>
     </div>
 
     <div class="sec-form-textarea">
-      <p><%= f.label :teamwork, "Ai experiență de lucru în echipă? Te rugăm să o descrii mai jos." %></p>
+      <p class="label-tag"><%= f.label :teamwork, "Ai experiență de lucru în echipă? Te rugăm să o descrii mai jos." %></p>
       <%= f.text_area :teamwork %>
     </div>
 
     <div class="sec-form-textarea">
       <%= f.label :last_skill do %>
-        <p>Care este ultimul lucru pe care l-ai învățat de sine stătător?</p>
-        <p>Descrie ce ai învățat și care au fost resursele pe care le-ai folosit.</p>
+        <p class="label-tag-with-info">Care este ultimul lucru pe care l-ai învățat de sine stătător?</p>
+        <p class="info-label-tag">Descrie ce ai învățat și care au fost resursele pe care le-ai folosit.</p>
       <% end %>
       <%= f.text_area :last_skill %>
     </div>
 
     <div>
       <%= f.label :agreement do %>
-        <p>Prin aplicarea la acest curs, îți asumi responsabilitatea de a-l urma în integralitate.</p>
-        <p>Noi am investit mult timp și efort în organizarea acestui curs, contăm pe seriozitatea și angajamentul participanților. Dacă există motive din care nu vei putea participa la anumite părți din curs, te rugăm să le enunți mai jos.</p>
+        <p class="label-tag-with-info">Prin aplicarea la acest curs, îți asumi responsabilitatea de a-l urma în integralitate.</p>
+        <p class="info-label-tag">Noi am investit mult timp și efort în organizarea acestui curs, contăm pe seriozitatea și angajamentul participanților. Dacă există motive din care nu vei putea participa la anumite părți din curs, te rugăm să le enunți mai jos.</p>
       <% end %>
       <div class="sec-form-radio">
         <label>
@@ -88,4 +92,18 @@ $("#candidate_profile_agreement_da").click(function() {
   $("#agreement_comment").hide();
 })
 </script>
+<style>
+.label-tag-with-info {
+  border: 0 !important;
+  padding-top: 4px !important;
+  font-size: 16px !important;
+}
+.label-tag {
+  font-size: 16px !important;
+}
+.info-label-tag {
+  color: #A5A5A5 !important;
+  font-size: 14px !important;
+}
+</style>
 
