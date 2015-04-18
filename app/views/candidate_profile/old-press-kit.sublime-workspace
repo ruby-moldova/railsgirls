@@ -324,18 +324,26 @@
 	"buffers":
 	[
 		{
-			"file": "/Users/sergiuterman/stuff/UTM/thesis/press-kit/fetchers/timpul.rb",
+			"contents": "require 'nokogiri'\nrequire 'rest_client'\n\nMAIN_PAGE = \"http://www.timpul.md/\"\ndoc = Nokogiri::HTML.parse(RestClient.get(MAIN_PAGE))\ndoc.css(\"h2.boxStireTitleSmall a\").map {|l| l['href'].scan(/-([\\d]+)\\.html/)[0][0].to_i}.max",
 			"settings":
 			{
-				"buffer_size": 1734,
+				"buffer_size": 224,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/Users/sergiuterman/stuff/UTM/thesis/press-kit/parsers/timpul.rb",
+			"file": "/Users/sergiuterman/stuff/UTM/thesis/press-kit/main.rb",
 			"settings":
 			{
-				"buffer_size": 2844,
+				"buffer_size": 481,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/sergiuterman/stuff/UTM/thesis/press-kit/fetchers/timpul.rb",
+			"settings":
+			{
+				"buffer_size": 1661,
 				"line_ending": "Unix"
 			}
 		}
@@ -347,10 +355,18 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 375.0,
-		"last_filter": "",
+		"height": 203.0,
+		"last_filter": "git comm",
 		"selected_items":
 		[
+			[
+				"git comm",
+				"Git: Commit"
+			],
+			[
+				"git add",
+				"Git: Add Current File"
+			],
 			[
 				"javascr",
 				"Set Syntax: JavaScript"
@@ -372,10 +388,6 @@
 				"Git: Commit"
 			],
 			[
-				"git add",
-				"Git: Add..."
-			],
-			[
 				"gi",
 				"Git: Commit"
 			],
@@ -385,10 +397,6 @@
 			],
 			[
 				"git c",
-				"Git: Commit"
-			],
-			[
-				"git comm",
 				"Git: Commit"
 			],
 			[
@@ -548,7 +556,7 @@
 				"Set Syntax: JavaScript"
 			]
 		],
-		"width": 516.0
+		"width": 490.0
 	},
 	"console":
 	{
@@ -740,6 +748,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"@most_recent_id",
+			"most_recent_id",
 			"resource",
 			"nahi",
 			"latest_stored_id",
@@ -865,9 +875,7 @@
 			"%form",
 			"form",
 			"L'Occitane",
-			"get",
-			"content",
-			"show"
+			"get"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -923,26 +931,23 @@
 			[
 				{
 					"buffer": 0,
-					"file": "/Users/sergiuterman/stuff/UTM/thesis/press-kit/fetchers/timpul.rb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1734,
+						"buffer_size": 224,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								540,
-								540
+								77,
+								42
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -953,19 +958,53 @@
 				},
 				{
 					"buffer": 1,
-					"file": "/Users/sergiuterman/stuff/UTM/thesis/press-kit/parsers/timpul.rb",
+					"file": "/Users/sergiuterman/stuff/UTM/thesis/press-kit/main.rb",
 					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 2844,
+						"buffer_size": 481,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								369,
-								375
+								40,
+								22
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"file": "/Users/sergiuterman/stuff/UTM/thesis/press-kit/fetchers/timpul.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1661,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								473,
+								473
 							]
 						],
 						"settings":
@@ -975,7 +1014,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 38.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -1001,11 +1040,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.5,
 			1.0
 		],
 		"rows":
@@ -1041,6 +1087,10 @@
 		"selected_items":
 		[
 			[
+				"unime",
+				"fetchers/unimedia.rb"
+			],
+			[
 				"timpul",
 				"fetchers/timpul.rb"
 			],
@@ -1051,10 +1101,6 @@
 			[
 				"pub",
 				"fetchers/publika.rb"
-			],
-			[
-				"unime",
-				"fetchers/unimedia.rb"
 			],
 			[
 				"schem",
@@ -1558,9 +1604,13 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "",
+		"last_filter": "rail",
 		"selected_items":
 		[
+			[
+				"rail",
+				"~/sublime projects/railsgirls.sublime-project"
+			],
 			[
 				"",
 				"~/sublime projects/railsgirls.sublime-project"
@@ -1588,7 +1638,7 @@
 	"show_minimap": false,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 311.0,
 	"status_bar_visible": true,
 	"template_settings":
