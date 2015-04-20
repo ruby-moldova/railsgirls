@@ -7,13 +7,14 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'script' %>
+  <%= javascript_include_tag '//ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js' %>
   <%= csrf_meta_tags %>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 </head>
 <body>
   <div class="wrapper">
     <div class="nav-icon"><i></i></div>
-    <nav class="main-nav">
+    <nav class="main-nav" style="box-shadow: none;">
       <div class="nav-content">
         <div class="nav-logo">
           <%= link_to "/" do %>

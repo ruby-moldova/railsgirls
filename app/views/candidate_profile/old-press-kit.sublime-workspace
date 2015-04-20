@@ -1,0 +1,1647 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"cand",
+				"candidate_profiles"
+			],
+			[
+				"map_re",
+				"map_reduce_worker"
+			],
+			[
+				"admin_influe",
+				"admin_influencers_path"
+			],
+			[
+				"admin_in",
+				"admin_influencer_path"
+			],
+			[
+				"in",
+				"influencers"
+			],
+			[
+				"last",
+				"last_sign_in"
+			],
+			[
+				"crea",
+				"created_at"
+			],
+			[
+				"influ",
+				"influencer"
+			],
+			[
+				"roc",
+				"rock_influencer"
+			],
+			[
+				"thebody",
+				"thebodyshop_brand"
+			],
+			[
+				"new_",
+				"new_admin_session_path"
+			],
+			[
+				"admin_dashboard",
+				"admin_dashboard_path"
+			],
+			[
+				"authent",
+				"authenticated_admin"
+			],
+			[
+				"price",
+				"price_range"
+			],
+			[
+				"price_rang",
+				"price_range"
+			],
+			[
+				"price_ran",
+				"price_ranges"
+			],
+			[
+				"av",
+				"average"
+			],
+			[
+				"have",
+				"have_content"
+			],
+			[
+				"new_inf",
+				"new_influencer_session_path"
+			],
+			[
+				"vide",
+				"videos"
+			],
+			[
+				"total_vie",
+				"total_videos"
+			],
+			[
+				"youtu",
+				"youtube_channel"
+			],
+			[
+				"current",
+				"current_project"
+			],
+			[
+				"curre",
+				"current_project"
+			],
+			[
+				"new",
+				"new_el"
+			],
+			[
+				"lang",
+				"language"
+			],
+			[
+				"timp",
+				"timpul_info"
+			],
+			[
+				"unime",
+				"unimedia_info"
+			],
+			[
+				"year",
+				"year_range"
+			],
+			[
+				"article",
+				"articles_per_year"
+			],
+			[
+				"emp",
+				"employees"
+			],
+			[
+				"gethe",
+				"getheader"
+			],
+			[
+				"hea",
+				"header"
+			],
+			[
+				"he",
+				"header"
+			],
+			[
+				"Pro",
+				"ProxyHandler"
+			],
+			[
+				"getEm",
+				"getEmployees"
+			],
+			[
+				"Alexa",
+				"Alexandra"
+			],
+			[
+				"THe",
+				"THE_CODE"
+			],
+			[
+				"iet",
+				"itemize"
+			],
+			[
+				"item",
+				"itemize"
+			],
+			[
+				"ite",
+				"itemize"
+			],
+			[
+				"empo",
+				"employee"
+			],
+			[
+				"e",
+				"employees"
+			],
+			[
+				"cont",
+				"contentType"
+			],
+			[
+				"stat",
+				"status"
+			],
+			[
+				"res",
+				"response"
+			],
+			[
+				"empoy",
+				"employee"
+			],
+			[
+				"dict",
+				"dictData"
+			],
+			[
+				"RESUL",
+				"RESULT_NEW"
+			],
+			[
+				"UPD",
+				"UPDAT_ITEM"
+			],
+			[
+				"INS",
+				"INSERT_ITEM"
+			],
+			[
+				"INSERT",
+				"SQL_INSERT_DATA"
+			],
+			[
+				"ex",
+				"exit"
+			],
+			[
+				"HTT",
+				"HTTPConnection"
+			],
+			[
+				"meta",
+				"metadata"
+			],
+			[
+				"uploa",
+				"uploadInfo"
+			],
+			[
+				"FormatH",
+				"FormatHelperJSON"
+			],
+			[
+				"For",
+				"FormatHelperXML"
+			],
+			[
+				"Format",
+				"FormatHelperJSON"
+			],
+			[
+				"format_",
+				"format_helperJSON"
+			],
+			[
+				"WAE",
+				"WAREHOUSE_PORT"
+			],
+			[
+				"data",
+				"data_file"
+			],
+			[
+				"req",
+				"request"
+			],
+			[
+				"newData",
+				"newDataList"
+			],
+			[
+				"for",
+				"for"
+			],
+			[
+				"val",
+				"values"
+			],
+			[
+				"url",
+				"urllib2"
+			],
+			[
+				"imag",
+				"imageExists"
+			],
+			[
+				"ima",
+				"image"
+			],
+			[
+				"im",
+				"image"
+			],
+			[
+				"has",
+				"hashes"
+			],
+			[
+				"__fea",
+				"__future__	magic"
+			],
+			[
+				"process",
+				"process_request_thread"
+			],
+			[
+				"nei",
+				"neighbour_info"
+			],
+			[
+				"HTTP",
+				"HTTPServer"
+			],
+			[
+				"Trheadin",
+				"ThreadingMixIn"
+			],
+			[
+				"ne",
+				"neighbour_info"
+			],
+			[
+				"neighou",
+				"neighbourhood"
+			],
+			[
+				"BaseH",
+				"BaseHTTPRequestHandler"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "require 'nokogiri'\nrequire 'rest_client'\n\nMAIN_PAGE = \"http://www.timpul.md/\"\ndoc = Nokogiri::HTML.parse(RestClient.get(MAIN_PAGE))\ndoc.css(\"h2.boxStireTitleSmall a\").map {|l| l['href'].scan(/-([\\d]+)\\.html/)[0][0].to_i}.max",
+			"settings":
+			{
+				"buffer_size": 224,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/sergiuterman/stuff/UTM/thesis/press-kit/main.rb",
+			"settings":
+			{
+				"buffer_size": 481,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/sergiuterman/stuff/UTM/thesis/press-kit/fetchers/timpul.rb",
+			"settings":
+			{
+				"buffer_size": 1661,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 203.0,
+		"last_filter": "git comm",
+		"selected_items":
+		[
+			[
+				"git comm",
+				"Git: Commit"
+			],
+			[
+				"git add",
+				"Git: Add Current File"
+			],
+			[
+				"javascr",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"javasc",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"ruby",
+				"Set Syntax: Ruby"
+			],
+			[
+				"ham",
+				"Set Syntax: Ruby Haml"
+			],
+			[
+				"git com",
+				"Git: Commit"
+			],
+			[
+				"gi",
+				"Git: Commit"
+			],
+			[
+				"git co",
+				"Git: Commit"
+			],
+			[
+				"git c",
+				"Git: Commit"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"git comi",
+				"Git: Commit"
+			],
+			[
+				"git blaem",
+				"Git: Blame"
+			],
+			[
+				"git diff",
+				"Git: Diff All Files"
+			],
+			[
+				"git commit",
+				"Git: Commit"
+			],
+			[
+				"git status",
+				"Git: Status"
+			],
+			[
+				"git statu",
+				"Git: Status"
+			],
+			[
+				"blame",
+				"Git: Blame"
+			],
+			[
+				"git stat",
+				"Git: Status"
+			],
+			[
+				"git sta",
+				"Git: Status"
+			],
+			[
+				"c+",
+				"Set Syntax: C++"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"git log",
+				"Git: Log All"
+			],
+			[
+				"python",
+				"Set Syntax: Python"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"sql",
+				"Set Syntax: SQL"
+			],
+			[
+				"c++",
+				"Set Syntax: C++"
+			],
+			[
+				"Action",
+				"Set Syntax: ActionScript"
+			],
+			[
+				"prett",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"Pretty",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"pretty",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"pretty print",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"Prety",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"PrettyJson",
+				"Pretty JSON: JSON query with ./jq"
+			],
+			[
+				"Insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Install",
+				"Package Control: Install Package"
+			],
+			[
+				"git dif",
+				"Git: Diff All Files"
+			],
+			[
+				"git ",
+				"Git: Blame"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"git BLa",
+				"Git: Blame"
+			],
+			[
+				"git Bla",
+				"Git: Blame"
+			],
+			[
+				"package install",
+				"Package Control: Install Package"
+			],
+			[
+				"git blame",
+				"Git: Blame"
+			],
+			[
+				"git blam",
+				"Set Syntax: Git Blame"
+			],
+			[
+				"package Control insta",
+				"Package Control: Install Package"
+			],
+			[
+				"packae",
+				"Package Control: Add Repository"
+			],
+			[
+				"pyth",
+				"Set Syntax: Python"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			]
+		],
+		"width": 490.0
+	},
+	"console":
+	{
+		"height": 241.0,
+		"history":
+		[
+			"python snode.py",
+			"python ",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/sergiuterman/stuff/UTM/thesis/press-kit",
+		"/Users/sergiuterman/stuff/UTM/thesis/press-kit/data",
+		"/Users/sergiuterman/stuff/UTM/thesis/press-kit/fetchers",
+		"/Users/sergiuterman/stuff/UTM/thesis/press-kit/parsers"
+	],
+	"file_history":
+	[
+		"/Users/sergiuterman/stuff/UTM/thesis/press-kit/fetchers/unimedia.rb",
+		"/Users/sergiuterman/stuff/UTM/thesis/press-kit/fetchers/publika.rb",
+		"/Users/sergiuterman/stuff/projects/railsgirls/db/schema.rb",
+		"/Users/sergiuterman/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/sergiuterman/stuff/projects/railsgirls/app/controllers/candidate_profile_controller.rb",
+		"/Users/sergiuterman/stuff/projects/railsgirls/app/assets/javascripts/application.js",
+		"/Users/sergiuterman/stuff/projects/playground/d3-book/chapter_07/01_scale_test.html",
+		"/Users/sergiuterman/stuff/projects/blogant/app/models/youtube_channel.rb",
+		"/Users/sergiuterman/stuff/projects/blogant/app/controllers/brands/influencers_controller.rb",
+		"/Users/sergiuterman/stuff/projects/blogant/db/schema.rb",
+		"/Users/sergiuterman/stuff/projects/blogant/app/models/video.rb",
+		"/Users/sergiuterman/stuff/projects/blogant/app/view_models/influencer_details.rb",
+		"/Users/sergiuterman/stuff/projects/blogant/app/helpers/application_helper.rb",
+		"/Users/sergiuterman/stuff/projects/blogant/app/views/influencers/profiles/show.html.haml",
+		"/Users/sergiuterman/stuff/projects/blogant/app/models/influencer.rb",
+		"/Users/sergiuterman/stuff/projects/blogant/app/views/brands/influencers/_influencer_sidebar.html.haml",
+		"/Users/sergiuterman/stuff/projects/blogant/db/migrate/20141115190042_devise_create_influencers.rb",
+		"/Users/sergiuterman/stuff/projects/blogant/app/views/brands/influencers/show.html.haml",
+		"/Users/sergiuterman/stuff/projects/blogant/app/controllers/influencers/omniauth_callbacks_controller.rb",
+		"/Users/sergiuterman/stuff/projects/blogant/app/views/layouts/brands/application.html.haml",
+		"/Users/sergiuterman/stuff/projects/blogant/app/controllers/influencers/profiles_controller.rb",
+		"/Users/sergiuterman/stuff/projects/blogant/app/controllers/admin/influencers_controller.rb",
+		"/Users/sergiuterman/stuff/projects/blogant/app/controllers/influencers/youtube_channels_controller.rb",
+		"/Users/sergiuterman/stuff/projects/blogant/app/views/brands/dashboards/index.html.haml",
+		"/Users/sergiuterman/stuff/projects/blogant/app/views/influencers/brands/show.html.haml",
+		"/Users/sergiuterman/stuff/projects/blogant/app/assets/javascripts/application.js",
+		"/Users/sergiuterman/stuff/projects/blogant/app/views/layouts/brands/_navigation.html.haml",
+		"/Users/sergiuterman/stuff/projects/blogant/app/views/layouts/brands/_sidebar.html.haml",
+		"/Users/sergiuterman/stuff/projects/blogant/config/application.rb",
+		"/Users/sergiuterman/Downloads/blogant/sass/styles.scss",
+		"/Users/sergiuterman/stuff/projects/blogant/app/assets/stylesheets/landing/styles.scss",
+		"/Users/sergiuterman/Downloads/blogant/sass/_icons.scss",
+		"/Users/sergiuterman/Downloads/blogant/sass/_extends.scss",
+		"/Users/sergiuterman/Downloads/blogant/sass/_colors.scss",
+		"/Users/sergiuterman/stuff/projects/blogant/app/assets/stylesheets/landing/_extends.scss",
+		"/Users/sergiuterman/stuff/projects/blogant/app/assets/stylesheets/landing/_colors.scss",
+		"/Users/sergiuterman/Downloads/blogant/sass/_flexslider.scss",
+		"/Users/sergiuterman/stuff/projects/blogant/app/assets/stylesheets/landing/_flexslider.scss",
+		"/Users/sergiuterman/stuff/projects/blogant/app/assets/stylesheets/landing/_icons.scss",
+		"/Users/sergiuterman/Downloads/blogant/sass/_layout.scss",
+		"/Users/sergiuterman/stuff/projects/blogant/app/assets/stylesheets/landing/_layout.scss",
+		"/Users/sergiuterman/Downloads/blogant/sass/_reset.scss",
+		"/Users/sergiuterman/stuff/projects/blogant/app/assets/stylesheets/landing/_reset.scss",
+		"/Users/sergiuterman/Downloads/blogant/sass/_variables.scss",
+		"/Users/sergiuterman/stuff/projects/blogant/app/assets/stylesheets/landing/_variables.scss",
+		"/Users/sergiuterman/Downloads/blogant/Gemfile",
+		"/Users/sergiuterman/stuff/projects/railsgirls/app/assets/javascripts/script.js",
+		"/Users/sergiuterman/stuff/projects/railsgirls/app/assets/stylesheets/sass/_reset.scss",
+		"/Users/sergiuterman/stuff/projects/railsgirls/app/assets/stylesheets/styles.css",
+		"/Users/sergiuterman/stuff/projects/railsgirls/config/routes.rb",
+		"/Users/sergiuterman/stuff/projects/railsgirls/config/initializers/assets.rb",
+		"/Users/sergiuterman/stuff/projects/railsgirls/app/assets/stylesheets/sass/styles.scss",
+		"/Users/sergiuterman/stuff/projects/railsgirls/public/assets/script-7b1c58355070a03b8da0106bbde0493e.js",
+		"/Users/sergiuterman/stuff/projects/railsgirls/app/assets/stylesheets/styles.css.map",
+		"/Users/sergiuterman/stuff/projects/railsgirls/app/models/candidate_profile.rb",
+		"/Users/sergiuterman/Downloads/rails_girls/aplica.html",
+		"/Users/sergiuterman/Downloads/rails_girls/index.html",
+		"/Users/sergiuterman/stuff/projects/railsgirls/app/assets/stylesheets/application.css",
+		"/Users/sergiuterman/stuff/projects/railsgirls/app/assets/stylesheets/sass/_flexslider.scss",
+		"/Users/sergiuterman/stuff/projects/railsgirls/Gemfile",
+		"/Users/sergiuterman/Stuff/UTM/thesis/client_part/lib/mongo/mr_methods.rb",
+		"/Users/sergiuterman/Stuff/projects/blogant/config/routes.rb",
+		"/Users/sergiuterman/Stuff/projects/blogant/app/models/admin.rb",
+		"/Users/sergiuterman/Stuff/projects/blogant/.git/config",
+		"/Users/sergiuterman/Stuff/projects/blogant/db/schema.rb",
+		"/Users/sergiuterman/Stuff/projects/blogant/db/migrate/20141115212018_create_youtube_channels.rb",
+		"/Users/sergiuterman/Stuff/UTM/thesis/client_part/app.rb",
+		"/Users/sergiuterman/Stuff/UTM/thesis/client_part/env.rb",
+		"/Users/sergiuterman/Stuff/UTM/thesis/client_part/lib/mongo/mongo_helper.rb",
+		"/Users/sergiuterman/Stuff/UTM/thesis/client_part/play.haml",
+		"/Users/sergiuterman/Stuff/UTM/thesis/client_part/public/css/style.css",
+		"/Users/sergiuterman/Stuff/UTM/thesis/client_part/lib/workers/map_reduce_worker.rb",
+		"/Users/sergiuterman/Stuff/UTM/thesis/client_part/views/index.haml",
+		"/Users/sergiuterman/Stuff/UTM/thesis/client_part/views/layout.haml",
+		"/Users/sergiuterman/Stuff/UTM/thesis/client_part/views/graph.haml",
+		"/Users/sergiuterman/Stuff/UTM/thesis/client_part/lib/websockets/notify_websocket.rb",
+		"/Users/sergiuterman/Stuff/UTM/thesis/client_part/public/vendor/bootstrap-notify/bootstrap-notify.js",
+		"/Users/sergiuterman/Stuff/UTM/thesis/client_part/Makefile",
+		"/Users/sergiuterman/Stuff/UTM/thesis/client_part/Gemfile",
+		"/Users/sergiuterman/Stuff/UTM/thesis/client_part/config.ru",
+		"/Users/sergiuterman/Stuff/UTM/thesis/client_part/lib/websockets/test_websocket.rb",
+		"/Users/sergiuterman/Stuff/UTM/thesis/client_part/clean.sh",
+		"/Users/sergiuterman/Stuff/UTM/thesis/client_part/lib/web_sockets/notify_socket.rb",
+		"/Users/sergiuterman/Stuff/UTM/thesis/client_part/bash.sh",
+		"/Users/sergiuterman/Stuff/UTM/thesis/client_part/lib/mongo/executed_query.rb",
+		"/Users/sergiuterman/Stuff/UTM/thesis/client_part/views/queries.haml",
+		"/Users/sergiuterman/Stuff/UTM/thesis/client_part/lib/mongo/query_result.rb",
+		"/Users/sergiuterman/Stuff/UTM/thesis/client_part/lib/mongo/parsed_page.rb",
+		"/Users/sergiuterman/Stuff/UTM/thesis/client_part/README.md",
+		"/Users/sergiuterman/Stuff/UTM/thesis/client_part/lib/query_result.rb",
+		"/Users/sergiuterman/Stuff/UTM/thesis/client_part/lib/mr_helper.rb",
+		"/Users/sergiuterman/Stuff/UTM/thesis/client_part/lib/mr_methods.rb",
+		"/Users/sergiuterman/Stuff/UTM/thesis/client_part/lib/parsed_page.rb",
+		"/Users/sergiuterman/Stuff/UTM/thesis/client_part/lib/main.rb",
+		"/Users/sergiuterman/test.js",
+		"/Users/sergiuterman/Stuff/UTM/thesis/client_part/lib/query_results.rb",
+		"/Users/sergiuterman/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/sergiuterman/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/sergiuterman/pomidor/server_and_tests.rb",
+		"/Users/sergiuterman/pomidor/sfffffaturi.txt",
+		"/Users/sergiuterman/pomidor/NameError",
+		"/Users/sergiuterman/pomidor/server.rb",
+		"/Users/sergiuterman/Stuff/UTM/thesis/client_part/main.rb",
+		"/Users/sergiuterman/Stuff/UTM/thesis/client_part/views/about.haml",
+		"/Users/sergiuterman/Stuff/UTM/thesis/client_part/public/css/styles.css",
+		"/Users/sergiuterman/Stuff/projects/blogant/Rakefile",
+		"/Users/sergiuterman/Stuff/UTM/thesis/press-kit/main.rb",
+		"/Users/sergiuterman/Stuff/projects/playground/test.cpp",
+		"/Users/sergiuterman/Stuff/projects/blogant/.gitignore",
+		"/Users/sergiuterman/Stuff/projects/blogant/Gemfile",
+		"/Users/sergiuterman/Stuff/projects/blogant/app/controllers/brands/registrations_controller.rb",
+		"/Users/sergiuterman/Stuff/projects/blogant/db/migrate/20150227144941_add_status_to_projects.rb",
+		"/Users/sergiuterman/Stuff/projects/blogant/app/controllers/brands/dashboards_controller.rb",
+		"/Users/sergiuterman/Stuff/projects/blogant/lib/tasks/db.rake",
+		"/Users/sergiuterman/Stuff/projects/blogant/app/controllers/influencers/dashboards_controller.rb",
+		"/Users/sergiuterman/Stuff/projects/blogant/app/view_models/influencer_details.rb",
+		"/Users/sergiuterman/Stuff/projects/blogant/app/models/influencer.rb",
+		"/Users/sergiuterman/Stuff/projects/blogant/spec/features/admin/campaign_interaction_spec.rb",
+		"/Users/sergiuterman/Stuff/projects/blogant/Capfile",
+		"/Users/sergiuterman/Stuff/projects/blogant/bin/rake",
+		"/Users/sergiuterman/Stuff/projects/blogant/config/initializers/instagram.rb",
+		"/Users/sergiuterman/Stuff/projects/blogant/app/views/admin/influencers/_influencer.html.haml",
+		"/Users/sergiuterman/Stuff/projects/blogant/app/models/project.rb",
+		"/Users/sergiuterman/Stuff/projects/blogant/app/controllers/admin/influencers_controller.rb",
+		"/Users/sergiuterman/Stuff/projects/blogant/spec/features/admin/influencer_interaction_spec.rb",
+		"/Users/sergiuterman/Stuff/projects/blogant/app/views/admin/influencers/show.html.haml",
+		"/Users/sergiuterman/Stuff/projects/blogant/app/views/influencers/registrations/new.html.haml",
+		"/Users/sergiuterman/Stuff/projects/blogant/app/assets/javascripts/vendor/imagesloaded.min.js"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 102.0,
+		"where_history":
+		[
+			"-public/vendor/bootstrap,-public/vendor/*min.js, -data/",
+			"-public/vendor/bootstrap,-public/vendor/*min.js",
+			"-/public/vendor/bootstrap,-/public/vendor/*min.js",
+			"-vendor/bootstrap,-vendor*min.js",
+			"vendor/bootstrap",
+			"/vendor/bootstrap",
+			"",
+			"*.rb",
+			"data",
+			"",
+			"/Users/sergiuterman/Stuff/UTM/PAD/lab6",
+			"",
+			"<open files>",
+			"gocart/controllers/filter.php",
+			"controllers/filter.php",
+			"filter.php",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"@most_recent_id",
+			"most_recent_id",
+			"resource",
+			"nahi",
+			"latest_stored_id",
+			"participanților",
+			"label-tag",
+			"	",
+			"videos",
+			"channel",
+			"- if",
+			"median",
+			"subscribers",
+			"link_youtube_account",
+			"def current_influencer",
+			"current_influencer",
+			"videos",
+			"influencers_youtube_channel_refresh_data_path",
+			"refresh_data!",
+			"subscribers",
+			"/ <script src",
+			"%meta{",
+			"123123",
+			"11111",
+			"@border-radius",
+			"border-radius",
+			"// ",
+			"text-align: left;\n  font-weight: normal;\n  vertical-align: middle;",
+			"config.assets.compress",
+			"config.serve_static_assets",
+			"config.serve_static_assets = false",
+			"config.assets.precompile",
+			"config.assets.css_compressor = :sass",
+			"app/assets",
+			"config.assets.precompile",
+			"config.assets.prefix",
+			"html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video",
+			"config.assets.precompile",
+			"clearfix",
+			"post_submit",
+			"stylesheet_link_tag",
+			"tylesheet_link_tag\nparams[:controller]",
+			"require_tree",
+			"config.assets.css_compresso",
+			"main",
+			"sass",
+			"flash",
+			"def create",
+			"f.label",
+			"redirect_to",
+			"resources",
+			"source",
+			"rvm",
+			"d.",
+			"h",
+			"data",
+			"d.",
+			"barData",
+			"lineData",
+			"height",
+			"d",
+			"rect",
+			"barData",
+			"yRange",
+			"yRange = d3.scale.linear().range([HEIGHT - MARGINS.top, MARGINS.bottom]).domain([0,\n  d3.max(barData, function(d) {\n    return d.y;\n  })]);",
+			"yRange",
+			"lineData",
+			"lineFunc",
+			"notify",
+			"//",
+			"animate",
+			"css",
+			"notify",
+			"m",
+			"'",
+			"require '",
+			"Mongoid.yml",
+			"h",
+			"require 'mongoid'",
+			"require 'mongoid",
+			"require mongoid",
+			"require 'mongoid",
+			"play",
+			"tarst",
+			"play",
+			"Thesis",
+			"super+/",
+			"super",
+			"cmd",
+			"username",
+			"where_user_came_from",
+			"configure",
+			"error",
+			"content",
+			"mongoid",
+			"content",
+			"image",
+			"admin_influencer_pat",
+			"image",
+			"\\\"",
+			"\\n",
+			"link_to",
+			"influencer",
+			"page",
+			"def current_proposal",
+			"- if",
+			"shit's",
+			"git ",
+			"def current_proposal",
+			"Brand.create",
+			"brand",
+			"brand@example.com",
+			"submit_tag",
+			"form_tag",
+			"\\\"",
+			"\\n",
+			"link_to",
+			"within",
+			"withing",
+			"form_tag",
+			"current_proposal",
+			"den",
+			"/brands/proposals/",
+			"=form",
+			"%form",
+			"form",
+			"L'Occitane",
+			"get"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"  ",
+			"\"",
+			"'",
+			"\"",
+			"\n\"",
+			"\"",
+			"'",
+			"\"",
+			"'",
+			"\"",
+			"'",
+			"\"",
+			"'",
+			"  ",
+			"WarehouseHandler.employees",
+			"employees",
+			"  ",
+			"	",
+			"  ",
+			"	",
+			"  ",
+			"	",
+			"  ",
+			"	",
+			"    ",
+			"serve_udp_client",
+			"  "
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"folders":
+	[
+		{
+			"path": "/Users/sergiuterman/stuff/UTM/thesis/press-kit"
+		}
+	],
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 224,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								77,
+								42
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/sergiuterman/stuff/UTM/thesis/press-kit/main.rb",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 481,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								40,
+								22
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"file": "/Users/sergiuterman/stuff/UTM/thesis/press-kit/fetchers/timpul.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1661,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								473,
+								473
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 38.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 298.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 100.0
+	},
+	"pinned_build_system": "",
+	"project": "",
+	"replace":
+	{
+		"height": 54.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"unime",
+				"fetchers/unimedia.rb"
+			],
+			[
+				"timpul",
+				"fetchers/timpul.rb"
+			],
+			[
+				"timpul.rb",
+				"fetchers/timpul.rb"
+			],
+			[
+				"pub",
+				"fetchers/publika.rb"
+			],
+			[
+				"schem",
+				"db/schema.rb"
+			],
+			[
+				"app",
+				"app/assets/javascripts/application.js"
+			],
+			[
+				"youtub",
+				"app/models/youtube_channel.rb"
+			],
+			[
+				"gem",
+				"Gemfile"
+			],
+			[
+				"viedo",
+				"app/models/video.rb"
+			],
+			[
+				"schema",
+				"db/schema.rb"
+			],
+			[
+				"brainfucon",
+				"app/controllers/brands/influencers_controller.rb"
+			],
+			[
+				"video",
+				"app/models/video.rb"
+			],
+			[
+				"youtube_channel",
+				"app/models/youtube_channel.rb"
+			],
+			[
+				"brinshow",
+				"app/views/brands/influencers/show.html.haml"
+			],
+			[
+				"helper",
+				"app/helpers/application_helper.rb"
+			],
+			[
+				"youtube",
+				"app/models/youtube_channel.rb"
+			],
+			[
+				"mediatn",
+				"db/migrate/20141115190042_devise_create_influencers.rb"
+			],
+			[
+				"yout",
+				"app/models/youtube_channel.rb"
+			],
+			[
+				"infu",
+				"app/models/influencer.rb"
+			],
+			[
+				"influe",
+				"app/models/influencer.rb"
+			],
+			[
+				"profile_cont",
+				"app/controllers/influencers/profiles_controller.rb"
+			],
+			[
+				"channe",
+				"app/models/youtube_channel.rb"
+			],
+			[
+				"brashow",
+				"app/views/influencers/brands/show.html.haml"
+			],
+			[
+				"application.j",
+				"app/assets/javascripts/application.js"
+			],
+			[
+				"applica",
+				"config/application.rb"
+			],
+			[
+				"application.js",
+				"app/assets/javascripts/application.js"
+			],
+			[
+				"js",
+				"app/assets/javascripts/script.js"
+			],
+			[
+				"appjs",
+				"app/assets/javascripts/application.js"
+			],
+			[
+				"produc",
+				"config/environments/production.rb"
+			],
+			[
+				"development.rb",
+				"config/environments/development.rb"
+			],
+			[
+				"sty",
+				"app/assets/stylesheets/styles.css"
+			],
+			[
+				"styles",
+				"app/assets/stylesheets/application.css"
+			],
+			[
+				"style",
+				"app/assets/stylesheets/sass/styles.scss"
+			],
+			[
+				"scrp",
+				"public/assets/script-7b1c58355070a03b8da0106bbde0493e.js"
+			],
+			[
+				"styls",
+				"app/assets/stylesheets/sass/styles.scss"
+			],
+			[
+				"candidat",
+				"app/views/candidate_profile/new.html.erb"
+			],
+			[
+				"candi",
+				"app/models/candidate_profile.rb"
+			],
+			[
+				"assets.rb",
+				"config/initializers/assets.rb"
+			],
+			[
+				"flexsi",
+				"app/assets/stylesheets/sass/_flexslider.scss"
+			],
+			[
+				"rout",
+				"config/routes.rb"
+			],
+			[
+				"scss",
+				"app/assets/stylesheets/sass/_flexslider.scss"
+			],
+			[
+				"application",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"gemf",
+				"Gemfile"
+			],
+			[
+				"gemfi",
+				"Gemfile"
+			],
+			[
+				"met",
+				"lib/mongo/mr_methods.rb"
+			],
+			[
+				"metho",
+				"lib/mongo/mr_methods.rb"
+			],
+			[
+				"routes",
+				"config/routes.rb"
+			],
+			[
+				"route",
+				"config/routes.rb"
+			],
+			[
+				"admin",
+				"app/models/admin.rb"
+			],
+			[
+				"sche",
+				"db/schema.rb"
+			],
+			[
+				"clean",
+				"clean.sh"
+			],
+			[
+				"mongo",
+				"mongoid.yml"
+			],
+			[
+				"project",
+				"app/models/project.rb"
+			],
+			[
+				"indashin",
+				"app/views/influencers/dashboards/index.html.haml"
+			],
+			[
+				"proje",
+				"app/models/project.rb"
+			],
+			[
+				"rake",
+				"lib/tasks/db.rake"
+			],
+			[
+				"factor",
+				"spec/factories/factories.rb"
+			],
+			[
+				"inf",
+				"app/models/influencer.rb"
+			],
+			[
+				"influen",
+				"app/views/influencers/registrations/new.html.haml"
+			],
+			[
+				"po",
+				"app/models/project.rb"
+			],
+			[
+				"influenc",
+				"app/models/influencer.rb"
+			],
+			[
+				"influ",
+				"app/models/influencer.rb"
+			],
+			[
+				"notifica",
+				"app/models/notification.rb"
+			],
+			[
+				"vadap",
+				"app/views/admin/projects/show.html.haml"
+			],
+			[
+				"avsh",
+				"app/views/admin/projects/show.html.haml"
+			],
+			[
+				"aprocon",
+				"app/controllers/admin/projects_controller.rb"
+			],
+			[
+				"bprnew",
+				"app/views/brands/projects/new.html.haml"
+			],
+			[
+				"proposal",
+				"app/models/proposal.rb"
+			],
+			[
+				"dbs",
+				"db/schema.rb"
+			],
+			[
+				"schee",
+				"spec/spec_helper.rb"
+			],
+			[
+				"cr",
+				"config/routes.rb"
+			],
+			[
+				"proposal_preview",
+				"app/view_models/proposal_preview.rb"
+			],
+			[
+				"pranprojind",
+				"app/views/brands/projects/index.html.haml"
+			],
+			[
+				"db",
+				"lib/tasks/db.rake"
+			],
+			[
+				"proj",
+				"app/models/project.rb"
+			],
+			[
+				"conrou",
+				"config/routes.rb"
+			],
+			[
+				"basecon",
+				"app/controllers/admin/base_controller.rb"
+			],
+			[
+				"sessicont",
+				"app/controllers/brands/sessions_controller.rb"
+			],
+			[
+				"dashcon",
+				"app/controllers/admin/dashboards_controller.rb"
+			],
+			[
+				"sign",
+				"spec/features/brands/sign_in_spec.rb"
+			],
+			[
+				"signinspe",
+				"spec/features/admin/sign_in_spec.rb"
+			],
+			[
+				"fact",
+				"spec/factories/factories.rb"
+			],
+			[
+				"pars",
+				"scripts/parse.rb"
+			],
+			[
+				"make",
+				"Makefile"
+			],
+			[
+				"projetcontr",
+				"app/controllers/brands/projects_controller.rb"
+			],
+			[
+				"prone",
+				"app/views/brands/projects/new.html.haml"
+			],
+			[
+				"projnew",
+				"app/views/brands/projects/new.html.haml"
+			],
+			[
+				"brandnew",
+				"app/views/brands/sessions/new.html.haml"
+			],
+			[
+				"project.rb",
+				"app/models/project.rb"
+			],
+			[
+				"projectnew",
+				"app/views/brands/projects/new.html.haml"
+			],
+			[
+				"influenreg",
+				"app/views/influencers/registrations/new.html.haml"
+			],
+			[
+				"influnnew",
+				"app/views/influencers/unlocks/new.html.haml"
+			],
+			[
+				"influecn",
+				"app/models/influencer.rb"
+			],
+			[
+				"brasess",
+				"app/views/brands/sessions/new.html.haml"
+			],
+			[
+				"influencersession",
+				"app/views/influencers/sessions/new.html.haml"
+			],
+			[
+				"influncersignew",
+				"app/views/influencers/registrations/new.html.haml"
+			],
+			[
+				"db.rak",
+				"lib/tasks/db.rake"
+			],
+			[
+				"influencer",
+				"app/models/influencer.rb"
+			],
+			[
+				"sign_up",
+				"spec/features/influencers/sign_up_spec.rb"
+			],
+			[
+				"s",
+				"spec/features/brands/sign_up_spec.rb"
+			],
+			[
+				"dash",
+				"app/controllers/brands/dashboards_controller.rb"
+			],
+			[
+				"spec",
+				"spec/features/brands/sign_up_spec.rb"
+			],
+			[
+				"applhelp",
+				"app/helpers/application_helper.rb"
+			],
+			[
+				"projects_control",
+				"app/controllers/influencers/projects_controller.rb"
+			],
+			[
+				"projects_cont",
+				"app/controllers/brands/projects_controller.rb"
+			],
+			[
+				"in",
+				"app/models/influencer.rb"
+			],
+			[
+				"influpro",
+				"app/controllers/influencers/projects_controller.rb"
+			],
+			[
+				"propo",
+				"app/controllers/brands/proposals_controller.rb"
+			],
+			[
+				"moproposa",
+				"app/models/proposal.rb"
+			],
+			[
+				"mopropo",
+				"app/view_models/proposal_preview.rb"
+			],
+			[
+				"dashboard",
+				"app/controllers/brands/dashboards_controller.rb"
+			],
+			[
+				"devise",
+				"config/initializers/devise.rb"
+			],
+			[
+				"session_cont",
+				"app/controllers/brands/sessions_controller.rb"
+			],
+			[
+				"20150310232124_add_has_goodies_to_projects",
+				"db/migrate/20150310232124_add_has_goodies_to_projects.rb"
+			],
+			[
+				"migration",
+				"db/migrate/20150125120023_create_notifications.rb"
+			],
+			[
+				"partials/pages/signin",
+				"app/assets/stylesheets/partials/pages/_signin.scss"
+			],
+			[
+				"partials/pages/influencers",
+				"app/assets/stylesheets/partials/pages/_influencers.scss"
+			],
+			[
+				"themes.css",
+				"app/assets/stylesheets/theme.scss"
+			],
+			[
+				"secrets.yml",
+				"config/secrets.example.yml"
+			],
+			[
+				"sing_in",
+				"app/views/layouts/influencers/_navigation.html.haml"
+			],
+			[
+				"configure",
+				"config/routes.rb"
+			],
+			[
+				"userm",
+				"gocart/models/user_model.php"
+			],
+			[
+				"config.php",
+				"gocart/config/config.php"
+			],
+			[
+				"config",
+				"parser/config.py"
+			],
+			[
+				"user.php",
+				"gocart/controllers/adman/users.php"
+			],
+			[
+				"pro",
+				"proxy.py"
+			],
+			[
+				"war",
+				"warehouse.py"
+			],
+			[
+				"c",
+				"#include <avr/io.h>"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "rail",
+		"selected_items":
+		[
+			[
+				"rail",
+				"~/sublime projects/railsgirls.sublime-project"
+			],
+			[
+				"",
+				"~/sublime projects/railsgirls.sublime-project"
+			],
+			[
+				"ba",
+				"~/sublime projects/blogant.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 137.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 378.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 311.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

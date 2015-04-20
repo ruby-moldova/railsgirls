@@ -1,47 +1,81 @@
-<section class="sec-form">
+<section class="sec-form" style="padding-top: 60px;">
   <h2>Formular de aplicare</h2>
   <%= form_for @candidate, url: {action: "create"} do |f| %>
-    <%= f.text_field :name, class: "sec-form-input", placeholder: "Nume Prenume"%>
-    <%= f.text_field :email, class: "sec-form-input", placeholder: "E-mail" %>
-    <%= f.text_field :phone, class: "sec-form-input", placeholder: "Telefon" %>
-    <%= f.text_field :city, class: "sec-form-input", placeholder: "Localitate" %>
-    <p><%= f.label :birthday, "Data nașterii" %><p>
-    <%= f.date_field :birthday, class: "sec-form-input" %>
-    <%= f.text_field :activity, class: "sec-form-input", placeholder: "Unde activezi/studiezi?" %>
-    <%= f.text_field :studies, class: "sec-form-input", placeholder: "Ce studii ai finisat?" %>
+    <%= f.text_field :name, class: "sec-form-input label-tag", placeholder: "Numele și Prenumele"%>
+
+    <%= f.text_field :email, class: "sec-form-input label-tag", placeholder: "E-mail" %>
+
+    <%= f.text_field :phone, class: "sec-form-input label-tag", placeholder: "Numărul de telefon" %>
+
+    <%= f.text_field :city, class: "sec-form-input label-tag", placeholder: "Localitatea în care te afli în prezent" %>
+
+    <%= f.number_field :age, class: "sec-form-input label-tag", placeholder: "Ce vârstă ai?"%>
 
     <div class="sec-form-textarea">
-      <p><%= f.label :motivation, "Ce te motivează să aplici la acest curs?" %></p>
+      <%= f.label :activity do %>
+        <p class="label-tag-with-info">Activitatea principală</p>
+        <p class="info-label-tag">Ești elevă, studentă, deja angajată sau... spirit liber?</p>
+      <% end %>
+      <%= f.text_field :activity, class: "sec-form-input" %>
+    </div>
+
+    <%= f.text_field :studies, class: "sec-form-input label-tag", placeholder: "Domeniul în care activezi sau în care îți faci studiile" %>
+
+    <div class="sec-form-textarea">
+      <%= f.label :motivation do %>
+        <p class="label-tag-with-info">Ce te motivează să aplici la acest curs?</p>
+        <p class="info-label-tag">Descrie în ce mod cunoștințele obținute vor fi relevante pentru activitatea ta ulterioară.</p>
+      <% end %>
       <%= f.text_area :motivation %>
     </div>
+
     <div class="sec-form-textarea">
-      <p><%= f.label :voluntariat, "Ai participat la activitate de voluntariat?" %></p>
+      <%= f.label :voluntariat do %>
+        <p class="label-tag-with-info">Ai activități de voluntariat?</p>
+        <p class="info-label-tag">Unul din obiectivele cursului e de a te ajuta să dezvolți competențe tehnice care îți vor permite să dezvolți soluții pentru probleme sociale din domeniul tău de activitate sau voluntariat.</p>
+      <% end %>
       <%= f.text_area :voluntariat %>
     </div>
+
     <div class="sec-form-textarea">
-      <p><%= f.label :project_idea, "Ce idei de proiect ai?" %></p>
+      <%= f.label :project_idea do %>
+        <p class="label-tag-with-info">Ai o idee clară de proiect, care se încadrează în descrierea pe care am dat-o noi și pe care o vei implementa în timpul cursului?</p>
+        <p class="info-label-tag">Te rugăm să descrii cu maximum de detalii ce anume îți propui să realizezi.</p>
+      <% end %>
       <%= f.text_area :project_idea %>
     </div>
+
     <div class="sec-form-textarea">
-      <p><%= f.label :teamwork, "Ce experiență ai de lucru în echipă?" %></p>
+      <p class="label-tag"><%= f.label :teamwork, "Ai experiență de lucru în echipă? Te rugăm să o descrii mai jos." %></p>
       <%= f.text_area :teamwork %>
     </div>
+
     <div class="sec-form-textarea">
-      <p><%= f.label :last_skill, "Care este ultimul lucru pe care l-ai învățat?" %></p>
+      <%= f.label :last_skill do %>
+        <p class="label-tag-with-info">Care este ultimul lucru pe care l-ai învățat de sine stătător?</p>
+        <p class="info-label-tag">Descrie ce ai învățat și care au fost resursele pe care le-ai folosit.</p>
+      <% end %>
       <%= f.text_area :last_skill %>
     </div>
 
-    <div class="sec-form-radio">
-      <label>
-        <%= f.radio_button :agreement, "Da" %> Sunt de acord să frecventez toate trei lecții
-      </label>
-      <label>
-        <%= f.radio_button :agreement, "Nu" %> Nu pot frecventa toate trei lecții
-      </label>
-    </div>
-    <div id="agreement_comment" style="display: none;">
-        <%= f.text_field :disagreement_comment, class: "sec-form-input", placeholder: "De ce?" %>
+    <div>
+      <%= f.label :agreement do %>
+        <p class="label-tag-with-info">Prin aplicarea la acest curs, îți asumi responsabilitatea de a-l urma în integralitate.</p>
+        <p class="info-label-tag">Noi am investit mult timp și efort în organizarea acestui curs, contăm pe seriozitatea și angajamentul participanților. Dacă există motive din care nu vei putea participa la anumite părți din curs, te rugăm să le enunți mai jos.</p>
+      <% end %>
+      <div class="sec-form-radio">
+        <label>
+          <%= f.radio_button :agreement, "Da", class: "radio-input" %>Voi participa la toate activitățile cursului
+        </label>
+        <label>
+          <%= f.radio_button :agreement, "Nu", class: "radio-input" %>Nu pot frecventa toate activitățile
+        </label>
       </div>
+      <div id="agreement_comment" style="display: none;">
+          <%= f.text_field :disagreement_comment, class: "sec-form-input why-input ", placeholder: "De ce?" %>
+      </div>
+    </div>
+
     <div class="sec-form-submit">
       <%= f.submit "Trimite", class: "btn btn-submit" %>
     </div>
@@ -53,6 +87,90 @@ $("#candidate_profile_agreement_nu").click(function() {
 });
 $("#candidate_profile_agreement_da").click(function() {
   $("#agreement_comment").hide();
-})
+});
+
+jQuery.extend(jQuery.validator.messages, {
+    required: "Completează acest câmp",
+    // remote: "Please fix this field.",
+    email: "Formatul acestui email este invalid",
+    // url: "Please enter a valid URL.",
+    // date: "Please enter a valid date.",
+    // dateISO: "Please enter a valid date (ISO).",
+    // number: "Please enter a valid number.",
+    // digits: "Please enter only digits.",
+    // creditcard: "Please enter a valid credit card number.",
+    // equalTo: "Please enter the same value again.",
+    // accept: "Please enter a value with a valid extension.",
+    // maxlength: jQuery.validator.format("Please enter no more than {0} characters."),
+    // minlength: jQuery.validator.format("Please enter at least {0} characters."),
+    // rangelength: jQuery.validator.format("Please enter a value between {0} and {1} characters long."),
+    // range: jQuery.validator.format("Please enter a value between {0} and {1}."),
+    // max: jQuery.validator.format("Please enter a value less than or equal to {0}."),
+    // min: jQuery.validator.format("Please enter a value greater than or equal to {0}.")
+});
+
+$(function() {
+  $("#new_candidate_profile").validate({
+
+    rules: {
+      "candidate_profile[name]": "required",
+      "candidate_profile[email]": {
+        required: true,
+        email: true
+      },
+      "candidate_profile[phone]": "required",
+      "candidate_profile[city]": "required",
+      "candidate_profile[age]": "required",
+      "candidate_profile[activity]": "required",
+      "candidate_profile[studies]": "required",
+      "candidate_profile[motivation]": "required",
+    },
+
+    submitHandler: function(form) {
+      form.submit();
+    },
+    errorPlacement: function(error, element) {
+      if (element.parent().is("div")) {
+        element = element.parent();
+      }
+      var new_error = $('<div class="custom-error"></div>').append(error);
+      element.after(new_error);
+    },
+    success: function(element){
+      element.parent().remove();
+    }
+  });
+});
 </script>
+<style>
+.label-tag-with-info {
+  font-family: "Titillium Web";
+  border: 0 !important;
+  padding-top: 4px !important;
+  font-size: 16px !important;
+}
+.label-tag {
+  font-family: "Titillium Web";
+  font-size: 16px !important;
+}
+.info-label-tag {
+  font-family: "Titillium Web";
+  color: #A5A5A5 !important;
+  font-size: 14px !important;
+}
+.why-input {
+  margin-top: 6px;
+}
+.radio-input {
+  margin-right: 10px;
+}
+.custom-error {
+  margin-top: -12px;
+  margin-bottom: 11px;
+  font-size: 14px;
+  font-family: "Titillium Web";
+  padding-left: 10px;
+  color: #EB524F;
+}
+</style>
 

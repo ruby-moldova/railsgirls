@@ -323,6 +323,14 @@ a {
   text-align: center;
 }
 
+.btn-apply :hover {
+  background-color: #F78986;
+}
+
+.sec-form-submit :hover {
+  background-color: #F78986;
+}
+
 // Button
 .btn {
   @include border-radius(45px);
