@@ -142,6 +142,9 @@ a {
     @include scale(font-size, 15px);
     @include scale(line-height, 23px);
     color: $color-black;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
