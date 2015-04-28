@@ -1,0 +1,14 @@
+defaults: &defaults
+  admin_email: railsgirlsmd@gmail.com
+  mailgun:
+    api_key: "mailgun-api-key"
+    domain: "mailgun-domain"
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults

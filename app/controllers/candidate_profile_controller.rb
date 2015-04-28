@@ -3,6 +3,7 @@ class CandidateProfileController < ApplicationController
     p params
     @profile = CandidateProfile.new(candidate_params)
     if @profile.save
+      CandidateMailer.report_new_candidate_email(@profile).deliver_now
       render :post_submit
     else
       flash[:notice] = "Nu toate campurile obligatorii sunt completate"
