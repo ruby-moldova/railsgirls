@@ -1,0 +1,65 @@
+
+
+<!-- email phone city activity studies age -->
+
+<!-- motivation voluntariat
+      project_idea
+      teamwork
+      last_skill
+      agreement
+      disagreement_comment -->
+
+<div class="row">
+  <div class="col-xs-12">
+    <h2><%= @candidate_profile.name %></h2>
+    <hr/>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-4 col-md-6 col-sm-8 col-xs-12">
+    <div class="panel panel-default">
+      <table class="table table-striped">
+        <tbody>
+          <% %w(email phone city activity studies age).each do |item| %>
+            <tr>
+              <td><%= item.titleize %></td>
+              <td><%= @candidate_profile.public_send(item) %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="col-xs-12"><hr/></div>
+</div>
+
+<div class="row">
+  <% %w(motivation
+        voluntariat
+        project_idea
+        teamwork
+        last_skill).each do |item| %>
+
+    <div class="col-md-4 col-sm-6 col-xs-12">
+      <div class="panel panel-default">
+        <div class="panel-heading"><%= item.titleize %></div>
+        <div class="panel-body">
+          <p><%= @candidate_profile.public_send(item) %></p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+
+  <div class="col-md-4 col-sm-6 col-xs-12">
+    <% agreement = @candidate_profile.agreement %>
+    <div class="panel panel-default">
+      <div class="panel-heading">Commitment: <b><%= agreement %></b></div>
+      <% if agreement == "Nu" %>
+        <div class="panel-body">
+          <p><%= @candidate_profile.disagreement_comment %></p>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
