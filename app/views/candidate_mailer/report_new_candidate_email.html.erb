@@ -1,0 +1,18 @@
+
+<h4>Candidate: <%= @profile.name %></h4>
+<% %w(email phone city activity studies age).each do |item| %>
+    <p><b><%= "#{item.titleize}: " %></b><%= @profile.public_send(item) %></p>
+<% end %>
+
+<% %w(motivation voluntariat
+      project_idea
+      teamwork
+      last_skill
+      agreement
+      disagreement_comment).each do |item| %>
+  <h4><%= "#{item.titleize}:" %></h4>
+  <p>
+    <%= @profile.public_send(item) %>
+  </p>
+<% end %>
+

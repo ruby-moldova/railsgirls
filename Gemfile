@@ -16,6 +16,9 @@ gem 'compass-rails', '~> 2.0.4'
 gem 'compass-susy-plugin'
 gem 'susy'
 
+gem 'mailgun_rails'
+gem 'settingslogic'
+
 group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
