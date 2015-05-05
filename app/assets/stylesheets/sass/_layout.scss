@@ -214,12 +214,16 @@ a {
 }
 
 .sec-sponsors {
-  @include scale(padding, 160px 0);
+  @include scale(padding, 80px 0);
+
+  img {
+    float: left;
+  }
 
   h3 {
     @include light;
     @include scale(padding, 0 0 60px);
-    @include scale(font-size, 15px);
+    @include scale(font-size, 30px);
     font-family: 'Titillium Web';
     text-align: center;
     text-transform: uppercase;
