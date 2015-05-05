@@ -213,6 +213,19 @@ a {
   }
 }
 
+.sec-sponsors {
+  @include scale(padding, 160px 0);
+
+  h3 {
+    @include light;
+    @include scale(padding, 0 0 60px);
+    @include scale(font-size, 15px);
+    font-family: 'Titillium Web';
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
 .sec-contact-info {
   @include light;
   font-family: 'Titillium Web';
