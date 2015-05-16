@@ -8,5 +8,6 @@ Rails.application.routes.draw do
     root 'candidate_profiles#index'
   end
 
+  get '/' => 'guides#index', :constraints => { :subdomain => /guides/ }
   root 'home#index'
 end
