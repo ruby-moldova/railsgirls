@@ -3,15 +3,16 @@
     <%= image_tag 'logo_red.png', alt: 'RailsGrils Chisinau' %>
   </div>
   <div class="sec-header-period">
-    <p>15-31 Mai 2015</p>
-    <%= link_to "Perioada de aplicare a luat sfârșit :(", "#", class: "btn btn-apply"%>
+    <p><strong>Editia II</strong></p>
+    <p>30 Ianuarie - 21 Februarie 2016</p>
+    <%= link_to "Aplică acum", new_candidate_profile_path, class: "btn btn-apply"%>
   </div>
 </section>
 
 <section class="sec-about mini-slide" id="Despre" style="font-family: 'Titillium Web';">
   <ul>
     <li class="calendar active">Durată</li>
-    <li class="reason">Scop</li>
+    <li class="reason">Proiecte</li>
     <li class="why">De ce să particip?</li>
     <li class="money">Cost</li>
     <li class="mentors">Mentori</li>
@@ -20,7 +21,7 @@
 
   <select>
     <option selected="selected">Durată</option>
-    <option>Scop</option>
+    <option>Proiecte</option>
     <option>De ce să particip?</option>
     <option>Cost</option>
     <option>Mentori</option>
@@ -28,17 +29,32 @@
   </select>
 
   <div class="sec-about-text">
-    <p>Cursurile vor fi lansate la ceremonia de deschidere pe 15 mai, iar activitățile didactice vor avea loc în sâmbetele de 16, 23 și 30 mai 2015. Duminică, 31 mai, te invităm la lansarea proiectelor dezvoltate în timpul atelierelor.</p>
+    <p>Cursurile vor fi lansate la ceremonia de deschidere pe 30 ianuarie, iar activitățile didactice vor avea loc în sâmbetele de 6, 13 și 20 februarie 2016. Duminică, 21 februarie, te invităm la lansarea proiectelor dezvoltate în timpul atelierelor.</p>
     <br />
-    <p>În total, vei beneficia de 24 de ore de curs și ateliere practice, pe care te încurajăm să le suplimentezi cu lucru independent pe parcursul săptămânii.</p>
+    <p>În total, vei beneficia de 36 de ore de curs și ateliere practice, pe care te încurajăm să le suplimentezi cu lucru independent pe parcursul săptămânii.</p>
     <br />
-    <p>La sfârșitul cursului, sperăm să avem o comunitate activă, alături de care vom crea alte evenimente și ateliere.</p>
+    <p>La sfârșitul cursului, ne propunem să creăm o comunitate activă, alături de care vom organiza alte evenimente și ateliere.</p>
   </div>
 
   <div class="sec-about-text">
-    <p>Ne propunem să te învățăm să faci propria aplicație web - noi îți punem bazele și îți oferim resursele didactice și referințele de care ai nevoie. Chiar dacă nu ai experiență anterioară, vino cu o idee, iar noi te vom ghida în realizarea ei.</p>
-    <br />
-    <p>Pe parcursul atelierului, vom încerca să construim împreună o comunitate pentru schimb de idei, sfaturi, mentorat și ajutor în crearea și întreținerea proiectelor.</p>
+    <p>Iată câteva proiecte pe care le propunem spre implementare participanților:<p>
+
+    <br/>
+    <p>Social:</p>
+    <ul class="info-ul with-bullets">
+      <li>Managementul cazurilor pentru asistenții sociali: un serviciu care permite asistenților sociali să posteze informații și actualizări despre persoanele care beneficiază de serviciile de asistență socială</li>
+      <li>Sistem de sistematizare a informațiilor despre pacienți: o platformă web în care lucrătorii medicali pot actualiza informații despre starea și tratamentul pacienților pe care îi tratează</li>
+      <li>Transparența declarațiilor și afiliațiilor politice: o platformă web pe care jurnaliștii pot întreține profilul public al oamenilor politici din Moldova - apartenența la partide și blocuri politice, declarații și gradul de împlinire a promisiunilor, voturi și absențele de la ședințe</li>
+      <li>Transparența proiectelor care au primit investiții din străinătate: un serviciu public în care vor fi agregate datele și rapoartele despre proiectele finanțate de Uniunea Europeană în Republica Moldova: condițiile, cheltuielile, actorii și gradul de completare a proiectelor de dezvoltare în infrastructură, educație și sănătate</li>
+    </ul>
+
+    <br/>
+    <p>Hobby și cotidian:</p>
+    <ul class="info-ul with-bullets">
+      <li>Prețuri și reduceri: o platformă web pe care utilizatorii pot posta informații despre prețurile la produse și servicii, anunța reduceri și oferte, precum și publica evaluări pentru prestatorii de bunuri și servicii din Republica Moldova</li>
+      <li>Călătorii: un serviciu în care călătorii Moldoveni pot publica informații despre călătoriile spre diferite destinații: restricțiile de viză, liniile aeriene, costul vieții, cazare, transport și securitate</li>
+      <li>Fotografii vechi, memorii și istorii: o platformă pe care utilizatorii pot posta fotografii vechi de familie, cu istorioare și notițe despre evenimentele sau oamenii de pe fotografii</li>
+    </ul>
   </div>
 
   <div class="sec-about-text">
@@ -66,17 +82,21 @@
     <p>Atelierele vor fi ghidate de unii dintre cei mai buni programatori Ruby on Rails din Republica Moldova, precum și alți specialiști din domeniul IT, care îți vor pune la dispoziție vastele lor cunoștințe și experiență.</p>
     <br />
     <ul class="info-ul">
-      <li>Eugeniu Vozoca - Programator la Granat</li>
-      <li>Petru Hîncu - Programator la Code Factory</li>
-      <li>Andrei Istratii - Programator Ruby on Rails</li>
-      <li>Doina Leca - Programator la Fusion Works</li>
+      <li>Alisa Frunză - Participant la RailsGirls Ediția I, programator Ruby on Rails</li>
+      <li>Andrei Căpăstru - Student, Universitatea Tehnică a Moldovei</li>
+      <li>Andrei Istratii - Student, Universitatea Tehnică a Moldovei</li>
+      <li>Boris Gherman - Programator Front-End, Freelancer</li>
+      <li>Diana Mihuță - Participant la RailsGirls Ediția I</li>
+      <li>Doina Leca - Director Executiv, Blogant</li>
+      <li>Ivan Danci - Programator Ruby on Rails, Fusion Works</li>
       <li>Ivan Zarea - Programator Ruby on Rails, profesor la Universitatea Tehnică a Moldovei</li>
-      <li>Ivan Danci - Programator Ruby on Rails la Fusion Works</li>
-      <li>Tatiana Moldovan - Programator Web la Endava</li>
-      <li>Vladimir Pintea - Programator Ruby on Rails la Fusion Works</li>
-      <li>Vladislav Ledniov - Programator Ruby on Rails la Fusion Works</li>
-      <li>Sergiu Terman - Programator Ruby on Rails</li>
-      <li>Ana Balica - Programator Ruby on Rails</li>
+      <li>Marina Cucer - Consultant Resurse Umane, Pentalog</li>
+      <li>Mihai Coșleț - Student, Universitatea Tehnică a Moldovei</li>
+      <li>Olga Batîr - Administrator, Generator Hub</li>
+      <li>Sergiu Terman - Programator Ruby on Rails, Blogant</li>
+      <li>Tatiana Moldovan - Programator Scala, Endava</li>
+      <li>Vladimir Pintea - Programator Ruby on Rails, Fusion Works</li>
+      <li>Vladislav Ledniov - Programator Ruby on Rails, Fusion Works</li>
     </ul>
   </div>
 
@@ -90,12 +110,12 @@
 <section class="sec-apply" id="Aplica">
   <ul class="sec-apply-list">
     <li class="form"><i></i><span>1.</span> Completează formularul de aplicare</li>
-    <li class="interview"><i></i><span>2.</span> participă la interviu</li>
+    <li class="interview"><i></i><span>2.</span> Participă la interviu online</li>
     <li class="acceptance"><i></i><span>3.</span> Confirmă participarea la eveniment </li>
   </ul>
 
   <div class="sec-apply-btn">
-    <%= link_to "Perioada de aplicare a luat sfârșit :(", "#", class: "btn btn-apply"%>
+    <%= link_to "Aplică", new_candidate_profile_path, class: "btn btn-apply" %>
   </div>
 </section>
 
@@ -113,25 +133,9 @@
     <a href="http://www.itacces.md/index.php?l=ro">
       <%= image_tag 'sponsor1.jpg', alt: 'Centrul de Informare și Acces' %>
     </a>
-    <a href="http://granat.md/">
-      <%= image_tag 'sponsor2.png', alt: 'Granat', style: 'margin-left: 65px;' %>
-    </a>
+
     <a href="http://hub.md/">
       <%= image_tag 'sponsor3.png', alt: 'Generator Hub', style: 'margin-left: 80px;' %>
-    </a>
-
-    <a href="http://www.codefactorygroup.com/">
-      <%= image_tag 'sponsor4.png', alt: 'Code Factory', style: 'margin-top: 20px;' %>
-    </a>
-    <a href="http://www.ict.md/">
-      <%= image_tag 'sponsor5.png', alt: 'Asociația Națională a companiilor din domeniul TIC', style: 'margin-left: 65px; margin-top: 20px;' %>
-    </a>
-    <a href="http://www.usaid.gov/">
-      <%= image_tag 'sponsor6.png', alt: 'USAID from the american people', style: 'margin-left: 65px; margin-top: 20px;' %>
-    </a>
-
-    <a href="http://fusionworks.md/">
-      <%= image_tag 'sponsor7.png', alt: 'Fusion Works', style: 'margin-top: 20px;' %>
     </a>
   </div>
 </section>
@@ -142,5 +146,15 @@
   text-align: left;
   width: 100%;
   margin-top: 6px;
+}
+
+.with-bullets {
+  list-style-position: outside;
+  list-style-type: circle
+}
+
+.with-bullets li {
+  margin-left: 30px;
+  padding-left: 0px;
 }
 </style>
