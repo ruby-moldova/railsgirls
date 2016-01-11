@@ -3,7 +3,7 @@ class Admin::CandidateProfilesController < ApplicationController
   layout 'admin'
 
   def index
-    @candidate_profiles = CandidateProfile.all
+    @candidate_profiles = CandidateProfile.order(created_at: :desc)
   end
 
   def show

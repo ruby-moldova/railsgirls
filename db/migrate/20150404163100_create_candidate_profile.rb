@@ -14,6 +14,8 @@ class CreateCandidateProfile < ActiveRecord::Migration
       t.text      :teamwork
       t.text      :last_skill
       t.text      :agreement
+
+      t.timestamps null: false
     end
   end
 end
