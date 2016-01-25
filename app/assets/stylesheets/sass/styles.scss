@@ -26,3 +26,10 @@ $sprites: sprite-map("sprites/*.png", $spacing: 20px);
 //@import 'flexslider';
 @import 'layout';
 @import 'menu';
+
+.sponsors-logo {
+  text-align: center;
+    a img {
+    margin-left: 60px;
+  }
+}
